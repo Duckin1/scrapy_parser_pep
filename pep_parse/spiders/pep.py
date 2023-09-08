@@ -5,6 +5,9 @@ from pep_parse.settings import ALLOWED_DOMAINS, URLS
 
 
 class PepSpider(scrapy.Spider):
+    """
+        Пайплайн для обработки данных и создания сводной таблицы статусов PEP.
+    """
     name = 'pep'
     allowed_domains = ALLOWED_DOMAINS
     start_urls = URLS

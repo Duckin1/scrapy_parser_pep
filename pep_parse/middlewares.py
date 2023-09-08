@@ -3,9 +3,6 @@ from scrapy import signals
 
 class PepParseSpiderMiddleware:
 
-    def __init__(self):
-        pass
-
     @classmethod
     def from_crawler(cls, crawler):
         s = cls()
