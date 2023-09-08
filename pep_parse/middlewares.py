@@ -1,3 +1,6 @@
+from scrapy import signals
+
+
 class PepParseSpiderMiddleware:
 
     def __init__(self):
