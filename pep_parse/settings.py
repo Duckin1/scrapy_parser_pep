@@ -24,3 +24,8 @@ FEEDS = {
 ITEM_PIPELINES = {
     f'{BOT_NAME}.pipelines.PepParsePipeline': 300,
 }
+
+HEADERS_PEP_TABLE = ('Статус', 'Количество')
+TIME_FORMAT = '%Y-%m-%dT%H-%M-%S'
+TOTAL_STATUSES = 'Total'
+FILE_NAME = 'status_summary_{datetime}.csv'

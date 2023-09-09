@@ -2,12 +2,8 @@ import csv
 from collections import defaultdict
 from datetime import datetime as dt
 
-from pep_parse.settings import BASE_DIR, RESULT_DIR
-
-HEADERS_PEP_TABLE = ('Статус', 'Количество')
-TIME_FORMAT = '%Y-%m-%dT%H-%M-%S'
-TOTAL_STATUSES = 'Total'
-FILE_NAME = 'status_summary_{datetime}.csv'
+from pep_parse.settings import (BASE_DIR, FILE_NAME, HEADERS_PEP_TABLE,
+                                RESULT_DIR, TIME_FORMAT, TOTAL_STATUSES)
 
 
 class PepParsePipeline:
