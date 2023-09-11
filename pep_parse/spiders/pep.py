@@ -17,8 +17,7 @@ class PepSpider(scrapy.Spider):
             'section[id=numerical-index] tbody a::attr(href)'
         )
         for pep_link in all_pep:
-            # Добавляем закрывающий слеш к ссылке на страницу PEP
-            pep_url = response.urljoin(pep_link.extract())
+            pep_url = response.urljoin(pep_link.extract()) + '/'
             yield response.follow(pep_url, callback=self.parse_pep)
 
     def parse_pep(self, response):
